@@ -33,7 +33,13 @@ Desarrollar la aplicación inicialmente para una sola plataforma (por ejemplo, m
 Limitar las funcionalidades a lo esencial: envío de mensajes de texto y gestión básica de contactos.
 
 ## Diagrama C4
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](./documentationAssets/c1Coomeva.png)
+
+### Diagrama C1
+![Diagrama C1](./documentationAssets/c1Coomeva.png)
+### Diagrama C2
+![Diagrama C2](./documentationAssets/c2Coomeva.png)
+### Diagrama C3
+![Diagrama C3](./documentationAssets/c3Coomeva.png)
 
 ## roles
 **Frontend Developer:** Andres F. Muñoz S  
