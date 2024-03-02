@@ -41,6 +41,9 @@ Limitar las funcionalidades a lo esencial: envío de mensajes de texto y gestió
 ### Diagrama C3
 ![Diagrama C3](./documentationAssets/c3Coomeva.png)
 
+## Casos de uso 
+![Diagrama de casos de uso](./documentationAssets/useCases.png)
+
 ## roles
 **Frontend Developer:** Andres F. Muñoz S  
 **Backend Developer:** Camilo A. Velásquez V   
