@@ -45,7 +45,7 @@ Limitar las funcionalidades a lo esencial: envío de mensajes de texto y gestió
 ![cases use](./documentationAssets/useCases.png)
 
 ## Diagrama ed flujo
-![Flowchart](./documentationAssets/Flowchart.jpg)
+![Flowchart](./documentationAssets/flowchart.jpg)
 
 ## roles
 **Frontend Developer:** Andres F. Muñoz S  
