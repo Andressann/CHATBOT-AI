@@ -35,14 +35,17 @@ Limitar las funcionalidades a lo esencial: envío de mensajes de texto y gestió
 ## Diagrama C4
 
 ### Diagrama C1
-![Diagrama C1](./documentationAssets/c1Coomeva.png)
+![Diagram C1](./documentationAssets/c1Coomeva.png)
 ### Diagrama C2
-![Diagrama C2](./documentationAssets/c2Coomeva.png)
+![Diagram C2](./documentationAssets/c2Coomeva.png)
 ### Diagrama C3
-![Diagrama C3](./documentationAssets/c3Coomeva.png)
+![Diagram C3](./documentationAssets/c3Coomeva.png)
 
 ## Casos de uso 
-![Diagrama de casos de uso](./documentationAssets/useCases.png)
+![cases use](./documentationAssets/useCases.png)
+
+## Diagrama ed flujo
+![Flowchart](./documentationAssets/Flowchart.jpg)
 
 ## roles
 **Frontend Developer:** Andres F. Muñoz S  
