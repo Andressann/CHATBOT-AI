@@ -1,19 +1,47 @@
 import './App.css'
-import { Routes, Route } from 'react-router-dom'
-import { UserContextProvider } from './context/UserContext'
-import Login from './pages/LoginPage'
-import Register from './pages/RegisterPage'
 
-function App() {
+
+const App = () => {
   return (
-    <UserContextProvider>
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-      </Routes>
-    </UserContextProvider>
-  )
-}
+    <>
+      <DOCTYPE html />
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <title>registro / Inicio</title>
+          <link rel="stylesheet" href="./App.css" />
+        </head>
+        <body>
+          {/* partial:index.partial.html */}
+          <div className="main">
+            <input type="checkbox" id="chk" aria-hidden="true" />
 
-export default App
+            <div className="signup">
+              <label htmlFor="chk" aria-hidden="true">
+                REGISTRO
+              </label>
+              <input type="text" name="txt" placeholder="User name" required="" />
+              <input type="email" name="email" placeholder="Email" required="" />
+              <input type="password" name="pswd" placeholder="Password" required="" />
+              <button>Registrar</button>
+            </div>
+
+            <div className="login">
+              <form>
+                <label htmlFor="chk" aria-hidden="true">
+                  INICIO
+                </label>
+                <input type="email" name="email" placeholder="Email" required="" />
+                <input type="password" name="pswd" placeholder="Password" required="" />
+                <button>Iniciar</button>
+              </form>
+            </div>
+          </div>
+          {/* partial */}
+        </body>
+      </html>
+    </>
+  );
+};
+
+export default App;
