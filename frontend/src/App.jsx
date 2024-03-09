@@ -1,9 +1,4 @@
 import './App.css'
-
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 const App = () => {
   return (
     <>
