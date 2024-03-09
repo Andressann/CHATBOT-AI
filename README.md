@@ -1,50 +1,48 @@
 
-# CHATBOT IA
+# IA CHATBOT
 
-## CONTEXTO
-La empresa “Coomeva” necesita un Chatbot que solo los usuarios puedan utilizar, este ChatBot basado en la sintomatología debe recomendar especialización a consultar y basado a la especialización recomendar un médico o médicos a los que pueda consultar en base de IA..
+## CONTEXT
+The company "Coomeva" needs a Chatbot that only users can use. This Chatbot, based on symptomatology, should recommend a specialization to consult and, based on the specialization, recommend one or more doctors to consult with based on AI.
 
-### Requisitos funcionales 
-**1. Registro e Inicio de Sesión:**
-Permitir a los usuarios registrarse con un nombre de usuario y contraseña.
-Iniciar sesión utilizando las credenciales proporcionadas.
+### Functional Requirements 
+**1.Registration in the web plataform (Auth step):**
+Allow users to register with a username, email and password.
 
-**2.Envío y Recepción de Mensajes:**
-Permitir a los usuarios enviar mensajes de texto a otros usuarios registrados.
-Los usuarios deben poder recibir y ver los mensajes enviados por otros usuarios.
+**2.make Login in the plataform (Auth step):**
+Allow users to log in with  email and password.
 
-**3.Notificaciones Básicas:**
-Enviar notificaciones básicas a los usuarios cuando reciben un nuevo mensaje.
+**3.Sending and Receiving Messages:**
+Allow users to send text messages to IA chatbot.
+Users must be able to receive and view messages sent by IA chatbot.
 
-**4.Gestión Simple de Contactos:**
-Permitir a los usuarios agregar y eliminar contactos básicos.
-Mostrar una lista de contactos disponibles para enviar mensajes.
+**4.Basic message history:**
+Provide a basic message history so users can view past conversations.
 
-**5.Historial Básico de Mensajes:**
-Proporcionar un historial básico de mensajes para que los usuarios puedan ver las conversaciones pasadas.
+**5.Simple User Interface:**
+Create a simple user interface that allows users to send and receive messages intuitively.
 
-**6.Interfaz de Usuario Simple:**
-Crear una interfaz de usuario simple que permita a los usuarios enviar y recibir mensajes de manera intuitiva.
+**6.Initial Platform:**
+Develop the application initially on the web
 
-**7.Plataforma Inicial:**
-Desarrollar la aplicación inicialmente para una sola plataforma (por ejemplo, móvil o web).
+**7.Consult advice on which doctor to consult:**
+el usuario por medio del chat ia podra obtener concejo sobre que medico de la base de datos de medicos asociados a Coomeva.
 
-**8.Funcionalidades Básicas:**
-Limitar las funcionalidades a lo esencial: envío de mensajes de texto y gestión básica de contactos.
+**8.Consult which specialist to consult:**
+based on your ailments, the AI should give you advice on which specialist from a medical branch to consult.
 
-## Diagrama C4
+## Diagram C4
 
-### Diagrama C1
+### Diagram C1
 ![Diagram C1](./documentationAssets/c1Coomeva.png)
-### Diagrama C2
+### Diagram C2
 ![Diagram C2](./documentationAssets/c2Coomeva.png)
-### Diagrama C3
+### Diagram C3
 ![Diagram C3](./documentationAssets/c3Coomeva.png)
 
-## Casos de uso 
+## cases use
 ![cases use](./documentationAssets/useCases.png)
 
-## Diagrama ed flujo
+## Flowchart
 ![Flowchart](./documentationAssets/flowchart.jpg)
 
 ## roles
@@ -53,13 +51,13 @@ Limitar las funcionalidades a lo esencial: envío de mensajes de texto y gestió
 **Quality assurance:** todo el equipo  
 **DevOps management:** Kenny A. Diaz C 
 
-## Tecnologías
-**Administrador de actividades:** Trello   
-**Controlador de versiones:** Git  
-**Controlador de integración:** jenkins, github    
-**Nube** azure     
-**FrontEnd:** react    
-**BackEnd:** Spring Boot    
+## Technologies
+**Activity Manager:** Trello
+**Version controller:** Git
+**Integration driver:** jenkins, github
+**Cloud:** azure
+**FrontEnd:** react
+**BackEnd:** Spring Boot
 
 ## Authors
 
