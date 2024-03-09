@@ -52,12 +52,12 @@ based on your ailments, the AI should give you advice on which specialist from a
 **DevOps management:** Kenny A. Diaz C 
 
 ## Technologies
-**Activity Manager:** Trello
-**Version controller:** Git
-**Integration driver:** jenkins, github
-**Cloud:** azure
-**FrontEnd:** react
-**BackEnd:** Spring Boot
+**Activity Manager:** Trello     
+**Version controller:** Git     
+**Integration driver:** jenkins, github     
+**Cloud:** azure    
+**FrontEnd:** react 
+**BackEnd:** Spring Boot    
 
 ## Authors
 
