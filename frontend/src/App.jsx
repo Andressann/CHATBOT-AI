@@ -1,10 +1,10 @@
 import React from 'react';
- // Asegúrate de tener el archivo styles.css en tu proyecto
+
 
 const ChatGPTApp = () => {
   return (
     <div className="flex justify-center">
-      <div className="font-sans max-w-3xl mx-auto p-4 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('./background.jpg')"}}>
+      <div className="font-sans max-w-3xl mx-auto p-4 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('./src/background.jpg')"}}>
         <header className="flex items-center justify-between text-teal-700 p-4 text-center rounded mb-4">
           <a href="https://www.imbanaco.com/">
             <img src="./src/front.png" alt="Clinica Mano logo" id="logo" className="h-24 mr-24" />
