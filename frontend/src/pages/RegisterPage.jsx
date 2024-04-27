@@ -2,7 +2,8 @@ import {Link, Navigate} from 'react-router-dom';
 import {useContext, useState} from 'react';
 import {UserContext} from '../context/UserContext';
 
-export default function LoginPage() {
+export default function RegisterPage() {
+    const [user, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [redirect, setRedirect] = useState(false);
@@ -30,10 +31,11 @@ export default function LoginPage() {
                 <div class = "Register">
                     </div>
 
-                    <div class = "Login">
+                    <div class = "Register">
                         <form>
                             <label for = "chk"
-                            aria-hidden = "ture">INCIO</label>
+                            aria-hidden = "ture">REGISTRAR</label>
+                            <input type = "text" name = "user" placeholder = "Username" required = ""></input>
                             <input type = "email" name = "email" placeholder = "Email" required = ""></input>
                             <input type = "Password" name = "pswd" placeholder = "Password" required = ""></input>
                             <button>Iniciar</button>
