@@ -46,7 +46,7 @@ based on your ailments, the AI should give you advice on which specialist from a
 ![Flowchart](./documentationAssets/flowchart.jpg)
 
 ## QAW
-ARQUITECTURA QAW
+**ARQUITECTURA QAW**
 
 Identificación de Atributos de Calidad:
 Usabilidad: Facilidad para el uso y el aprendizaje del sistema.
@@ -64,32 +64,38 @@ Escenario de Seguridad:
 Estímulo: Intento de consultas no autorizadas.
 Respuesta: Bloqueo de la consulta y registro del intento.
 
-	Escenario de Usabilidad:
+**Escenario de Usabilidad:**
 Estímulo: Usuario nuevo accede al sistema.
 Respuesta: El usuario comprende rápidamente como usar el sistema sin tener que consultar otros sitios.
 
-	Escenario de Eficiencia:
+**Escenario de Eficiencia:**
 Estímulo: Usuario busca consultar sus síntomas.
 Respuesta: El sistema rápidamente muestra la información requerida. 
 
-	Escenario de Flexibilidad:
+**Escenario de Flexibilidad:**
 Estímulo: Se realiza un nuevo tipo de consulta.
 Respuesta: El sistema se adapta sin requerir realizar cambios mayores en su programación. 
 
-Definición de Métricas:
+**Definición de Métricas:**
 
-Usabilidad:
+**Usabilidad:**
 Tiempo de Aprendizaje: Tiempo que le toma a un usuario nuevo aprender el uso del sistema hasta un nivel competente.
 Tasa de Errores de Usuario: Número de errores que los usuarios cometen al interactuar con el sistema.
-Eficiencia:
+
+**Eficiencia:**
 Tiempo de Respuesta: Tiempo que tarda el sistema en responder a una solicitud del usuario.
 Uso de Recursos: Cantidad de recursos del sistema (como memoria, CPU o créditos por el uso del chat) que se utilizan durante las operaciones. 
+
 Throughput: Cantidad de tareas que el sistema puede procesar durante un periodo de tiempo determinado.
-Flexibilidad:
-Tiempo y Esfuerzo para Modificar: Medida del tiempo y esfuerzo requeridos para implementar cambios en el sistema.
+
+**Flexibilidad:**
+Tiempo y Esfuerzo para Modificar: Medida del tiempo y esfuerzo requeridos para implementar cambios en el sistema
+
 Facilidad de Añadir Nuevas Funcionalidades: Nivel de dificultad que se presenta para añadir nuevas funcionalidades al sistema.
-Seguridad:
+
+**Seguridad:**
 Tiempo hasta el Primer Fallo de Seguridad: Tiempo hasta que se descubra el primer fallo de seguridad después de una liberación. 
+
 Número de vulnerabilidades descubiertas: Número de vulnerabilidades de seguridad descubiertas durante un periodo de tiempo específico.
 
 
