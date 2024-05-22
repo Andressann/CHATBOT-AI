@@ -41,6 +41,28 @@ const LoginPage = () => {
       <input type="checkbox" id="chk" aria-hidden="true" checked={!isLogin} onChange={toggleForm} />
       <div className="signup">
         <form onSubmit={handleSubmit}>
+          <label htmlFor="chk" aria-hidden="true">INICIO</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required=""
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Password"
+            required=""
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button type="submit">Inicar</button>
+        </form>
+      </div>
+      <div className="login">
+        <form onSubmit={handleSubmit}>
           <label htmlFor="chk" aria-hidden="true">REGISTRO</label>
           <input
             type="email"
@@ -59,28 +81,6 @@ const LoginPage = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button type="submit">Registrar</button>
-        </form>
-      </div>
-      <div className="login">
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="chk" aria-hidden="true">INICIO</label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            required=""
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            name="pswd"
-            placeholder="Password"
-            required=""
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button type="submit">Iniciar</button>
         </form>
         {message && <p>{message}</p>}
       </div>
