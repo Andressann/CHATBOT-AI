@@ -1,49 +1,26 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LoginPage from './components/LoginPage';
+import ChatbotPage from './components/ChatbotPage';
+import { UserProvider } from './components/UserContext';
+import './App.css';
 
-import './App.css'
 const App = () => {
   return (
-    <>
-      <DOCTYPE html />
-      <html lang="en">
-        <head>
-          <meta charset="UTF-8" />
-          <title>registro / Inicio</title>
-          <link rel="stylesheet" href="./App.css" />
-        </head>
-        <body>
-          {/* partial:index.partial.html */}
-          <div className="main">
-            <input type="checkbox" id="chk" aria-hidden="true" />
-
-            <div className="signup">
-              <label htmlFor="chk" aria-hidden="true">
-                REGISTRO
-              </label>
-              <input type="text" name="txt" placeholder="User name" required="" />
-              <input type="email" name="email" placeholder="Email" required="" />
-              <input type="password" name="pswd" placeholder="Password" required="" />
-              <button>Registrar</button>
-            </div>
-
-            <div className="login">
-              <form>
-                <label htmlFor="chk" aria-hidden="true">
-                  INICIO
-                </label>
-                <input type="email" name="email" placeholder="Email" required="" />
-                <input type="password" name="pswd" placeholder="Password" required="" />
-                <button>Iniciar</button>
-              </form>
-            </div>
-          </div>
-          {/* partial */}
-        </body>
-      </html>
-    </>
+    <UserProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/chatbot" element={<ChatbotPage />} />
+        </Routes>
+      </Router>
+    </UserProvider>
   );
 };
 
 export default App;
+
+
 
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
@@ -100,3 +77,4 @@ const ChatGPTApp = () => {
 };
 
 export default ChatGPTApp;
+
