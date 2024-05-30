@@ -13,7 +13,7 @@ jobs:
             - name: Install Node.js
               uses: actions/setup-node@v4
               with:
-                node-version: '14'
+                node-version: '20'
 
             - name: Checkout code (Download)
               uses: actions/checkout@v4
@@ -36,3 +36,4 @@ jobs:
               uses: sonarSource/sonarcloud-github-action@master
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
