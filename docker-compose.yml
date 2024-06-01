@@ -4,7 +4,7 @@ services:
   java_app:
     container_name: java_app
     image: pee-java_app:1.0.0
-    build: .\Backend\springboot-postgresql-docker-compose-master
+    build: /Backend/springboot-postgresql-docker-compose-master
     ports:
       - 8080:8080
     environment:
