@@ -11,6 +11,7 @@ COPY package*.json ./
 
 # Instala las dependencias
 RUN npm install
+RUN npm install vite -save-dev
 
 # Copia el resto del código de la aplicación
 COPY . .
@@ -19,4 +20,4 @@ COPY . .
 EXPOSE 3000
 
 # Comando para correr la aplicación en modo desarrollo
-CMD ["npm", "run", "dev"]
+CMD npm run dev
