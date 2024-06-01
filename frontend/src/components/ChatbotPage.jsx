@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import '../ChatbotPage.css';
 
+import botIcon from '../assets/botIcon.png'; // Asegúrate de que la ruta sea correcta
+import userIcon from '../assets/userIcon.png'; // Asegúrate de que la ruta sea correcta
+import sendIcon from '../assets/boton.png';
+
+
 const ChatbotPage = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
@@ -26,12 +31,25 @@ const ChatbotPage = () => {
   return (
     <div className="chatbot-page">
       <div className="chat-header">
-        <h1>¿En qué puedo ayudarte hoy?</h1>
+
+        <img src={botIcon} alt="Bot" className="bot-icon" />
+        <div className="header-text">
+          <h2>My Chatbot</h2>
+          <span className="agent">Chatbot Agent</span>
+        </div>
       </div>
       <div className="chat-window">
         {messages.map((message, index) => (
-          <div key={index} className={`message ${message.sender}`}>
-            {message.text}
+          <div key={index} className={`message-container ${message.sender}`}>
+            <img
+              src={message.sender === 'user' ? userIcon : botIcon}
+              alt={message.sender}
+              className="avatar"
+            />
+            <div className={`message ${message.sender}`}>
+              {message.text}
+            </div>
+
           </div>
         ))}
       </div>
@@ -41,16 +59,19 @@ const ChatbotPage = () => {
           value={input}
           onChange={handleInputChange}
           onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-          placeholder="Escribe un mensaje"
+
+          placeholder="Type here and press enter to chat"
         />
-        <button onClick={handleSend}>Enviar</button>
+       <img 
+          src={sendIcon} 
+          alt="Send" 
+          onClick={handleSend} 
+          className="send-icon"
+        />
+
       </div>
     </div>
   );
 };
 
 export default ChatbotPage;
-
-
-
-
