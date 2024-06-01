@@ -58,7 +58,9 @@ const LoginPage = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+
           <button type="submit">Iniciar</button>
+
         </form>
       </div>
       <div className="login">
@@ -87,10 +89,4 @@ const LoginPage = () => {
     </div>
   );
 };
-
 export default LoginPage;
-
-
-
-
-

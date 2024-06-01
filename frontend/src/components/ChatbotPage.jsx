@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import '../ChatbotPage.css';
+
 import botIcon from '../assets/botIcon.png'; // Asegúrate de que la ruta sea correcta
 import userIcon from '../assets/userIcon.png'; // Asegúrate de que la ruta sea correcta
 import sendIcon from '../assets/boton.png';
+
 
 const ChatbotPage = () => {
   const [messages, setMessages] = useState([]);
@@ -29,6 +31,7 @@ const ChatbotPage = () => {
   return (
     <div className="chatbot-page">
       <div className="chat-header">
+
         <img src={botIcon} alt="Bot" className="bot-icon" />
         <div className="header-text">
           <h2>My Chatbot</h2>
@@ -46,6 +49,7 @@ const ChatbotPage = () => {
             <div className={`message ${message.sender}`}>
               {message.text}
             </div>
+
           </div>
         ))}
       </div>
@@ -55,6 +59,7 @@ const ChatbotPage = () => {
           value={input}
           onChange={handleInputChange}
           onKeyPress={(e) => e.key === 'Enter' && handleSend()}
+
           placeholder="Type here and press enter to chat"
         />
        <img 
@@ -63,15 +68,10 @@ const ChatbotPage = () => {
           onClick={handleSend} 
           className="send-icon"
         />
+
       </div>
     </div>
   );
 };
 
 export default ChatbotPage;
-
-
-
-
-
-
