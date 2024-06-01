@@ -4,7 +4,6 @@
 DEST_DIR="/root/CHATBOT-AI"
 
 # URL del repositorio de Git
-REPO_URL="https://github.com/user/repository.git"
 
 # Verificar si el directorio de destino existe
 if [ -d "$DEST_DIR" ]; then
