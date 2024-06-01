@@ -109,9 +109,13 @@ Número de vulnerabilidades descubiertas: Número de vulnerabilidades de segurid
 **Activity Manager:** Trello     
 **Version controller:** Git     
 **Integration driver:** jenkins, github     
-**Cloud:** azure    
+**Cloud:** aws netify
 **FrontEnd:** react 
-**BackEnd:** Spring Boot    
+**BackEnd:** Spring Boot
+
+**page**: https://master--adorable-begonia-5331c5.netlify.app
+
+backend CI: crontab in aws
 
 ## Authors
 
