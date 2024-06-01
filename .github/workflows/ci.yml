@@ -19,15 +19,5 @@ jobs:
         DOCKER_LOGIN: ${{secrets.DOCKER_LOGIN}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
       run: docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
-    - name: Build the Docker images
-      run: |
-        docker-compose -f Backend/springboot-postgresql-docker-compose-master/docker-compose.yml build java_app
-        docker-compose -f Backend/springboot-postgresql-docker-compose-master/docker-compose.yml build java_db
-    - name: Tag the Docker images
-      run: |
-        docker tag pee-java_app:1.0.0 camilovelasquez/backend:latest
-        docker tag camilovelasquez/postgres camilovelasquez/postgres:latest
-    - name: Push to Dockerhub
-      run: |
-        docker push camilovelasquez/backend:latest
-        docker push camilovelasquez/postgres:latest
+    - name: Build the Docker image
+      run: docker-compose build

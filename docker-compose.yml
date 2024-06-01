@@ -3,7 +3,7 @@ version: "3.9"
 services:
   java_app:
     container_name: java_app
-    image: pee-java_app:1.0.0
+    image: camilovelasquez/backend:latest  # Etiqueta deseada
     build: ./Backend/springboot-postgresql-docker-compose-master
     ports:
       - 8080:8080
@@ -15,11 +15,10 @@ services:
       - java_db
   java_db:
     container_name: java_db
-    image: postgres:12
+    image: camilovelasquez/postgres:latest  # Etiqueta deseada para PostgreSQL
     ports:
       - 5432:5432
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
-    
